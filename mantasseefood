@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,6 @@
             text-align: center;
         }
 
-        /* Εικόνα στην κορυφή */
         .top-image {
             width: 100%;
             display: block;
@@ -23,7 +22,7 @@
             background: #002b55;
             color: white;
             padding: 40px 20px;
-            border-bottom: 4px solid #d4af37; /* Χρυσή λεπτομέρεια */
+            border-bottom: 4px solid #d4af37;
         }
 
         h1 {
@@ -35,24 +34,25 @@
         .subtitle {
             font-size: 18px;
             margin-top: 10px;
-            color: #d4af37; /* Χρυσό */
+            color: #d4af37;
         }
 
         .container {
             margin-top: 40px;
+            padding: 0 20px;
         }
 
         .btn {
             display: block;
-            width: 80%;
-            max-width: 320px;
+            width: 100%;
+            max-width: 340px;
             margin: 15px auto;
-            padding: 15px;
+            padding: 16px;
             background: #003d80;
             color: white;
             text-decoration: none;
             font-size: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
             border: 2px solid #d4af37;
             transition: 0.2s;
         }
@@ -68,12 +68,18 @@
             color: #555;
             font-size: 14px;
         }
+
+        /* Mobile Optimization */
+        @media (max-width: 480px) {
+            h1 { font-size: 30px; }
+            .subtitle { font-size: 16px; }
+            .btn { font-size: 18px; padding: 14px; }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Εικόνα στην κορυφή -->
     <img src="images/mantas.png" alt="Mantas Seafood" class="top-image">
 
     <header>
@@ -83,30 +89,28 @@
 
     <div class="container">
 
-        <!-- ΕΠΙΛΟΓΗ 1: Βρες μας στο Google Maps -->
+        <!-- Google Maps -->
         <a class="btn"
-           href="https://www.google.com/maps/place/Mandas/@35.4903939,24.062248,17z/data=!3m1!5s0x149c7e1b1f9e4dd1:0x1e209344b01aa47d!4m15!1m8!3m7!1s0x149c7e1b1f073eed:0x60d3d8e4ed331298!2sMandas!8m2!3d35.49039!4d24.062254!10e5!16s%2Fg%2F1tv40mq8!3m5!1s0x149c7e1b1f073eed:0x60d3d8e4ed331298!8m2!3d35.49039!4d24.062254!16s%2Fg%2F1tv40mq8?entry=ttu"
+           href="https://www.google.com/maps/place/Mandas/"
            target="_blank">
             📍 Βρες μας στο Google Maps
         </a>
 
-        <!-- ΕΠΙΛΟΓΗ 2: Άφησε Κριτική -->
+        <!-- Google Review -->
         <a class="btn"
-           href="https://www.google.com/maps/place/Mandas/@35.4903939,24.062248,17z/data=!3m1!5s0x149c7e1b1f9e4dd1:0x1e209344b01aa47d!4m17!1m8!3m7!1s0x149c7e1b1f073eed:0x60d3d8e4ed331298!2sMandas!8m2!3d35.49039!4d24.062254!10e5!16s%2Fg%2F1tv40mq8!3m7!1s0x149c7e1b1f073eed:0x60d3d8e4ed331298!8m2!3d35.49039!4d24.062254!9m1!1b1!16s%2Fg%2F1tv40mq8?entry=ttu"
+           href="https://www.google.com/maps/place/Mandas/"
            target="_blank">
             ⭐ Άφησε Κριτική
         </a>
 
-        <!-- ΕΠΙΛΟΓΗ 3: Μενού PDF -->
+        <!-- Menu PDF -->
         <a class="btn" href="menu.pdf" target="_blank">
             📖 Δες το Μενού (PDF)
         </a>
 
-    </div>
+        <!-- Click to Call -->
+        <a class="btn" href="tel:+3069XXXXXXXX">
+            📞 Κάλεσέ μας
+        </a>
 
-    <footer>
-        © 2026 Mantas Seafood
-    </footer>
-
-</body>
-</html>
+        <!-- WhatsApp -->
