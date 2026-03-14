@@ -1,116 +1,148 @@
-<!DOCTYPE html>
 <html lang="el">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantas Seafood</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taverna O Mantas</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            text-align: center;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: radial-gradient(circle, #003a66 0%, #001a33 100%);
+        color: white;
+        text-align: center;
+    }
 
-        .top-image {
-            width: 100%;
-            display: block;
-        }
+    /* Logo */
+    .logo-container {
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    .logo-title {
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .logo-sub {
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    .logo-line {
+        width: 140px;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 12px auto 25px auto;
+        opacity: 0.85;
+    }
 
-        header {
-            background: #002b55;
-            color: white;
-            padding: 40px 20px;
-            border-bottom: 4px solid #d4af37;
-        }
+    /* Buttons */
+    .menu-button {
+        width: 85%;
+        background: #f2f8ff;
+        color: #001a33;
+        padding: 18px;
+        margin: 12px auto;
+        border-radius: 14px;
+        border: 1px solid #bcd4e8;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        transition: transform 0.12s ease;
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 38px;
-            letter-spacing: 1px;
-        }
+    .menu-button:active {
+        transform: scale(0.97);
+    }
 
-        .subtitle {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #d4af37;
-        }
+    /* Accordion */
+    details {
+        width: 85%;
+        margin: 12px auto;
+        background: #f2f8ff;
+        color: #001a33;
+        border-radius: 14px;
+        border: 1px solid #bcd4e8;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        padding: 10px 16px;
+    }
 
-        .container {
-            margin-top: 40px;
-            padding: 0 20px;
-        }
+    summary {
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px 0;
+    }
 
-        .btn {
-            display: block;
-            width: 100%;
-            max-width: 340px;
-            margin: 15px auto;
-            padding: 16px;
-            background: #003d80;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 12px;
-            border: 2px solid #d4af37;
-            transition: 0.2s;
-        }
+    .item {
+        text-align: left;
+        padding: 6px 0;
+        font-size: 17px;
+        border-bottom: 1px solid #d0d0d0;
+    }
 
-        .btn:hover {
-            background: #002b55;
-            transform: scale(1.03);
-        }
+    .item:last-child {
+        border-bottom: none;
+    }
 
-        footer {
-            margin-top: 60px;
-            padding: 20px;
-            color: #555;
-            font-size: 14px;
-        }
+    /* Language buttons */
+    .lang-container {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
 
-        /* Mobile Optimization */
-        @media (max-width: 480px) {
-            h1 { font-size: 30px; }
-            .subtitle { font-size: 16px; }
-            .btn { font-size: 18px; padding: 14px; }
-        }
-    </style>
+    .lang-btn {
+        display: inline-block;
+        background: #f2f8ff;
+        color: #001a33;
+        padding: 10px 18px;
+        margin: 0 6px;
+        border-radius: 14px;
+        border: 1px solid #bcd4e8;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        transition: transform 0.12s ease;
+    }
+
+    .lang-btn:active {
+        transform: scale(0.97);
+    }
+
+</style>
 </head>
 
 <body>
 
-    <img src="images/mantas.png" alt="Mantas Seafood" class="top-image">
+    <!-- LOGO -->
+    <div class="logo-container">
+        <div class="logo-title">TAVERNA O MANTAS</div>
+        <div class="logo-sub">ΤΑΒΕΡΝΑ Ο ΜΑΝΤΑΣ</div>
+        <div class="logo-line"></div>
+    </div>
 
-    <header>
-        <h1>Mantas Seafood</h1>
-        <div class="subtitle">Fresh • Local • Authentic</div>
-    </header>
+    <!-- LANG -->
+    <div class="lang-container">
+        <div class="lang-btn">GR</div>
+        <div class="lang-btn">EN</div>
+    </div>
 
-    <div class="container">
+    <!-- MAIN BUTTONS -->
+    <button class="menu-button">Google Review ⭐</button>
+    <button class="menu-button">Navigation 📍</button>
 
-        <!-- Google Maps -->
-        <a class="btn"
-           href="https://www.google.com/maps/place/Mandas/"
-           target="_blank">
-            📍 Βρες μας στο Google Maps
-        </a>
+    <!-- ACCORDION EXAMPLE -->
+    <details>
+        <summary>Ορεκτικά</summary>
+        <div class="item">Τζατζίκι</div>
+        <div class="item">Φέτα ψητή</div>
+        <div class="item">Πατάτες τηγανητές</div>
+    </details>
 
-        <!-- Google Review -->
-        <a class="btn"
-           href="https://www.google.com/maps/place/Mandas/"
-           target="_blank">
-            ⭐ Άφησε Κριτική
-        </a>
+    <details>
+        <summary>Θαλασσινά</summary>
+        <div class="item">Γαρίδες σαγανάκι</div>
+        <div class="item">Καλαμάρι τηγανητό</div>
+        <div class="item">Χταπόδι ψητό</div>
+    </details>
 
-        <!-- Menu PDF -->
-        <a class="btn" href="menu.pdf" target="_blank">
-            📖 Δες το Μενού (PDF)
-        </a>
-
-        <!-- Click to Call -->
-        <a class="btn" href="tel:+3069XXXXXXXX">
-            📞 Κάλεσέ μας
-        </a>
-
-        <!-- WhatsApp -->
+</body>
+</html>
